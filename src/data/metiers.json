@@ -1,0 +1,382 @@
+[
+  {
+    "id": "infirmier",
+    "nom": "Infirmier / Infirmière",
+    "description": "Prend en charge les patients, administre les soins prescrits et assure la surveillance médicale. Travaille en hôpital, clinique, EHPAD ou en libéral.",
+    "riasec": ["S", "R"],
+    "etudes": {
+      "diplome": "Diplôme d'État Infirmier (DEI)",
+      "duree": "3 ans après le bac",
+      "acces": "Parcoursup — IFSI (Institut de Formation en Soins Infirmiers)",
+      "bacs_conseilles": ["Bac général (SVT conseillée)", "Bac STSS"]
+    },
+    "marche": {
+      "salaire_debutant": "1 800 € net/mois",
+      "salaire_experimente": "2 500 € net/mois",
+      "debouches": ["Hôpital", "Clinique", "EHPAD", "Infirmier libéral", "Scolaire"],
+      "tendance": "Forte demande, nombreux postes disponibles"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/infirmier-infirmiere"
+  },
+  {
+    "id": "medecin-generaliste",
+    "nom": "Médecin généraliste",
+    "description": "Diagnostique et traite les maladies courantes, oriente vers les spécialistes. Premier recours pour les patients.",
+    "riasec": ["I", "S"],
+    "etudes": {
+      "diplome": "Doctorat en médecine (DES Médecine Générale)",
+      "duree": "9 ans après le bac (PASS + 8 ans)",
+      "acces": "Parcoursup — PASS ou L.AS, puis concours",
+      "bacs_conseilles": ["Bac général (Maths + SVT indispensables)"]
+    },
+    "marche": {
+      "salaire_debutant": "3 500 € net/mois (remplaçant)",
+      "salaire_experimente": "6 000 € net/mois (installé)",
+      "debouches": ["Cabinet libéral", "Hôpital", "Centre de santé", "Médecine du travail"],
+      "tendance": "Déserts médicaux créent un fort besoin"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/medecin"
+  },
+  {
+    "id": "enseignant",
+    "nom": "Enseignant / Professeur",
+    "description": "Transmet des savoirs et accompagne les élèves dans leur apprentissage. Du primaire au supérieur.",
+    "riasec": ["S", "A", "I"],
+    "etudes": {
+      "diplome": "Master MEEF (Métiers de l'Enseignement, de l'Éducation et de la Formation)",
+      "duree": "5 ans après le bac (Licence + Master)",
+      "acces": "Parcoursup pour la Licence, puis concours CAPES ou CRPE",
+      "bacs_conseilles": ["Bac général selon la matière enseignée"]
+    },
+    "marche": {
+      "salaire_debutant": "1 900 € net/mois",
+      "salaire_experimente": "2 800 € net/mois",
+      "debouches": ["École primaire", "Collège", "Lycée", "Enseignement supérieur"],
+      "tendance": "Recrutement important, vacances scolaires avantageuses"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/professeur-des-ecoles"
+  },
+  {
+    "id": "psychologue",
+    "nom": "Psychologue",
+    "description": "Accompagne les individus dans leurs difficultés psychologiques, réalise des bilans et des thérapies.",
+    "riasec": ["S", "I", "A"],
+    "etudes": {
+      "diplome": "Master de Psychologie (bac+5)",
+      "duree": "5 ans après le bac",
+      "acces": "Parcoursup — Licence de Psychologie",
+      "bacs_conseilles": ["Bac général (SES, Philosophie, SVT)"]
+    },
+    "marche": {
+      "salaire_debutant": "1 700 € net/mois",
+      "salaire_experimente": "2 800 € net/mois (libéral : variable)",
+      "debouches": ["Hôpital", "Cabinet libéral", "Scolaire", "RH entreprise", "Associations"],
+      "tendance": "Demande croissante, profession réglementée"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/psychologue"
+  },
+  {
+    "id": "ingenieur-informatique",
+    "nom": "Ingénieur informatique / Développeur",
+    "description": "Conçoit, développe et maintient des logiciels, applications ou systèmes informatiques.",
+    "riasec": ["I", "R", "C"],
+    "etudes": {
+      "diplome": "École d'ingénieur ou Master Informatique (bac+5)",
+      "duree": "5 ans après le bac",
+      "acces": "Parcoursup — IUT Informatique (bac+2) ou CPGE puis école, ou Licence Informatique",
+      "bacs_conseilles": ["Bac général (Maths + NSI fortement conseillés)"]
+    },
+    "marche": {
+      "salaire_debutant": "2 800 € net/mois",
+      "salaire_experimente": "4 500 € net/mois",
+      "debouches": ["Startup", "Grande entreprise", "ESN", "Freelance", "Jeux vidéo"],
+      "tendance": "Un des secteurs les plus recruteurs en France"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/ingenieur-en-informatique"
+  },
+  {
+    "id": "data-scientist",
+    "nom": "Data Scientist",
+    "description": "Analyse de grandes quantités de données pour en extraire des informations utiles à la prise de décision.",
+    "riasec": ["I", "C", "R"],
+    "etudes": {
+      "diplome": "Master Statistiques / Data Science ou école d'ingénieur (bac+5)",
+      "duree": "5 ans après le bac",
+      "acces": "Parcoursup — Licence Maths/Informatique/Économie",
+      "bacs_conseilles": ["Bac général (Maths obligatoire, NSI conseillée)"]
+    },
+    "marche": {
+      "salaire_debutant": "3 000 € net/mois",
+      "salaire_experimente": "5 000 € net/mois",
+      "debouches": ["Finance", "Santé", "Marketing", "Tech", "Recherche"],
+      "tendance": "Métier d'avenir, forte demande"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/data-scientist"
+  },
+  {
+    "id": "graphiste",
+    "nom": "Graphiste / Designer graphique",
+    "description": "Crée des visuels, logos, affiches, supports de communication print et digital.",
+    "riasec": ["A", "I", "E"],
+    "etudes": {
+      "diplome": "BTS Design Graphique ou DN MADE ou Bachelor Design",
+      "duree": "2 à 3 ans après le bac",
+      "acces": "Parcoursup — BTS Communication Visuelle ou école privée",
+      "bacs_conseilles": ["Bac général", "Bac STHR", "Bac Arts Appliqués"]
+    },
+    "marche": {
+      "salaire_debutant": "1 600 € net/mois",
+      "salaire_experimente": "2 500 € net/mois (freelance : variable)",
+      "debouches": ["Agence de com", "Studio design", "Freelance", "In-house entreprise"],
+      "tendance": "Compétitif, portfolio indispensable"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/graphiste"
+  },
+  {
+    "id": "ux-designer",
+    "nom": "Designer UX/UI",
+    "description": "Conçoit des interfaces numériques intuitives et agréables (sites, apps). Mêle design et psychologie utilisateur.",
+    "riasec": ["A", "I", "E"],
+    "etudes": {
+      "diplome": "Bachelor ou Master UX Design / Interaction Design",
+      "duree": "3 à 5 ans après le bac",
+      "acces": "Parcoursup ou école privée spécialisée",
+      "bacs_conseilles": ["Bac général", "Bac STI2D"]
+    },
+    "marche": {
+      "salaire_debutant": "2 200 € net/mois",
+      "salaire_experimente": "3 800 € net/mois",
+      "debouches": ["Startup", "Agence digitale", "Grande entreprise", "Freelance"],
+      "tendance": "Très forte demande depuis 2020"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/designer-ux"
+  },
+  {
+    "id": "journaliste",
+    "nom": "Journaliste",
+    "description": "Collecte, vérifie et diffuse l'information auprès du public via la presse, radio, TV ou web.",
+    "riasec": ["A", "S", "E"],
+    "etudes": {
+      "diplome": "Diplôme d'école de journalisme reconnue (bac+5)",
+      "duree": "5 ans après le bac",
+      "acces": "Concours d'entrée en école après Licence (CFJ, ESJ, IJBA…)",
+      "bacs_conseilles": ["Bac général (Lettres, Histoire, Langues conseillées)"]
+    },
+    "marche": {
+      "salaire_debutant": "1 700 € net/mois",
+      "salaire_experimente": "2 800 € net/mois",
+      "debouches": ["Presse écrite", "Radio", "Télévision", "Médias en ligne", "Pigiste"],
+      "tendance": "Secteur en mutation, digital en croissance"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/journaliste"
+  },
+  {
+    "id": "architecte",
+    "nom": "Architecte",
+    "description": "Conçoit des bâtiments et espaces en alliant esthétique, fonctionnalité et réglementation.",
+    "riasec": ["A", "R", "I"],
+    "etudes": {
+      "diplome": "DPLG / HMONP (bac+6 minimum)",
+      "duree": "6 ans après le bac (ENSA)",
+      "acces": "Parcoursup — École Nationale Supérieure d'Architecture",
+      "bacs_conseilles": ["Bac général (Maths, Arts Plastiques)"]
+    },
+    "marche": {
+      "salaire_debutant": "1 800 € net/mois",
+      "salaire_experimente": "3 500 € net/mois (libéral : très variable)",
+      "debouches": ["Cabinet d'architecture", "Promoteur immobilier", "Collectivités", "Freelance"],
+      "tendance": "Stable, rénovation énergétique crée de nouveaux besoins"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/architecte"
+  },
+  {
+    "id": "electricien",
+    "nom": "Électricien / Électrotechnicien",
+    "description": "Installe, entretient et dépanne les installations électriques dans les bâtiments ou l'industrie.",
+    "riasec": ["R", "I"],
+    "etudes": {
+      "diplome": "CAP Électricien ou Bac Pro MELEC ou BTS Électrotechnique",
+      "duree": "2 à 4 ans après le collège/bac",
+      "acces": "Parcoursup ou apprentissage (très apprécié)",
+      "bacs_conseilles": ["Bac Pro MELEC", "Bac STI2D"]
+    },
+    "marche": {
+      "salaire_debutant": "1 700 € net/mois",
+      "salaire_experimente": "2 500 € net/mois (chef d'équipe)",
+      "debouches": ["BTP", "Industrie", "Maintenance", "Auto-entrepreneur"],
+      "tendance": "Très forte demande, pénurie de profils"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/electricien-du-batiment"
+  },
+  {
+    "id": "kinesitherapeute",
+    "nom": "Kinésithérapeute",
+    "description": "Rééduque les patients après blessure, opération ou maladie grâce à des techniques manuelles et physiques.",
+    "riasec": ["S", "R", "I"],
+    "etudes": {
+      "diplome": "Diplôme d'État de Masseur-Kinésithérapeute (DEMK)",
+      "duree": "5 ans après le bac (1 an PASS + 4 ans IFMK)",
+      "acces": "Parcoursup — PASS ou L.AS puis sélection IFMK",
+      "bacs_conseilles": ["Bac général (SVT + Maths conseillés)"]
+    },
+    "marche": {
+      "salaire_debutant": "2 000 € net/mois",
+      "salaire_experimente": "4 000 € net/mois (libéral)",
+      "debouches": ["Cabinet libéral", "Hôpital", "Clinique de rééducation", "Sport"],
+      "tendance": "Excellents débouchés, vieillissement population"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/masseur-kinesitherapeute"
+  },
+  {
+    "id": "commercial",
+    "nom": "Commercial / Chargé de clientèle",
+    "description": "Prospecte de nouveaux clients, gère un portefeuille et atteint des objectifs de vente.",
+    "riasec": ["E", "S"],
+    "etudes": {
+      "diplome": "BTS NDRC ou MCO ou Licence Pro Commerce",
+      "duree": "2 à 3 ans après le bac",
+      "acces": "Parcoursup — BTS ou IUT Techniques de Commercialisation",
+      "bacs_conseilles": ["Bac général", "Bac STMG"]
+    },
+    "marche": {
+      "salaire_debutant": "1 800 € + variable",
+      "salaire_experimente": "3 500 € + variable",
+      "debouches": ["Tous secteurs", "B2B", "B2C", "Immobilier", "Assurance"],
+      "tendance": "Toujours recruteur, variable peut être très attractif"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/commercial"
+  },
+  {
+    "id": "avocat",
+    "nom": "Avocat",
+    "description": "Défend les intérêts de ses clients en justice et les conseille sur les questions juridiques.",
+    "riasec": ["E", "S", "I"],
+    "etudes": {
+      "diplome": "CAPA (Certificat d'Aptitude à la Profession d'Avocat)",
+      "duree": "7 ans après le bac (Licence Droit + Master + CRFPA + EFB)",
+      "acces": "Parcoursup — Licence de Droit",
+      "bacs_conseilles": ["Bac général (Maths, Philosophie, Histoire conseillés)"]
+    },
+    "marche": {
+      "salaire_debutant": "2 000 € net/mois (collaborateur)",
+      "salaire_experimente": "5 000 € net/mois et plus",
+      "debouches": ["Cabinet d'avocats", "Entreprise (juriste)", "Secteur public"],
+      "tendance": "Stable, spécialisations en droit du numérique en croissance"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/avocat"
+  },
+  {
+    "id": "comptable",
+    "nom": "Comptable / Expert-comptable",
+    "description": "Gère les comptes d'une entreprise, établit les bilans, déclarations fiscales et conseille sur la gestion.",
+    "riasec": ["C", "I", "E"],
+    "etudes": {
+      "diplome": "BTS Comptabilité Gestion ou DCG / DSCG (Expert-comptable)",
+      "duree": "2 ans (BTS) à 8 ans (Expert-comptable)",
+      "acces": "Parcoursup — BTS CG ou IUT GEA",
+      "bacs_conseilles": ["Bac général (Maths)", "Bac STMG"]
+    },
+    "marche": {
+      "salaire_debutant": "1 700 € net/mois",
+      "salaire_experimente": "3 500 € net/mois (expert-comptable associé : plus)",
+      "debouches": ["Cabinet comptable", "Entreprise", "Administration", "Libéral"],
+      "tendance": "Stable et sécurisé, toujours en demande"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/expert-comptable"
+  },
+  {
+    "id": "pharmacien",
+    "nom": "Pharmacien",
+    "description": "Délivre les médicaments, conseille les patients et assure la sécurité des traitements.",
+    "riasec": ["I", "S", "C"],
+    "etudes": {
+      "diplome": "Diplôme d'État de Docteur en Pharmacie",
+      "duree": "6 ans minimum après le bac",
+      "acces": "Parcoursup — PASS ou L.AS",
+      "bacs_conseilles": ["Bac général (SVT + Chimie + Maths indispensables)"]
+    },
+    "marche": {
+      "salaire_debutant": "2 200 € net/mois",
+      "salaire_experimente": "5 000 € net/mois (titulaire officine)",
+      "debouches": ["Officine", "Hôpital", "Industrie pharmaceutique", "Recherche"],
+      "tendance": "Stable, officines en légère baisse, industrie en hausse"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/pharmacien"
+  },
+  {
+    "id": "chef-de-projet",
+    "nom": "Chef de projet / Manager",
+    "description": "Pilote des projets de A à Z : planning, budget, équipe, livraison. Présent dans tous les secteurs.",
+    "riasec": ["E", "C", "S"],
+    "etudes": {
+      "diplome": "Master Management de projet ou école de commerce/ingénieur",
+      "duree": "5 ans après le bac",
+      "acces": "Parcoursup — Licence puis Master, ou école de commerce post-bac",
+      "bacs_conseilles": ["Bac général"]
+    },
+    "marche": {
+      "salaire_debutant": "2 500 € net/mois",
+      "salaire_experimente": "4 500 € net/mois",
+      "debouches": ["IT", "BTP", "Marketing", "Industrie", "Événementiel"],
+      "tendance": "Transversal à tous les secteurs, très porteur"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/chef-de-projet"
+  },
+  {
+    "id": "educateur-specialise",
+    "nom": "Éducateur spécialisé",
+    "description": "Accompagne des personnes en difficulté sociale (enfants, adultes handicapés, personnes en exclusion).",
+    "riasec": ["S", "E", "A"],
+    "etudes": {
+      "diplome": "Diplôme d'État d'Éducateur Spécialisé (DEES)",
+      "duree": "3 ans après le bac",
+      "acces": "Parcoursup — IRTS ou EFTS (Institut de Formation Travail Social)",
+      "bacs_conseilles": ["Bac général", "Bac STSS"]
+    },
+    "marche": {
+      "salaire_debutant": "1 700 € net/mois",
+      "salaire_experimente": "2 200 € net/mois",
+      "debouches": ["Protection enfance", "Handicap", "Insertion", "Justice", "EHPAD"],
+      "tendance": "Fort besoin, secteur peu rémunérateur mais porteur de sens"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/educateur-specialise"
+  },
+  {
+    "id": "mecanicien-automobile",
+    "nom": "Mécanicien automobile",
+    "description": "Diagnostique les pannes et effectue l'entretien et la réparation des véhicules.",
+    "riasec": ["R", "I"],
+    "etudes": {
+      "diplome": "CAP Maintenance des Véhicules ou Bac Pro MV",
+      "duree": "2 à 3 ans après le collège",
+      "acces": "Parcoursup ou apprentissage",
+      "bacs_conseilles": ["Bac Pro Maintenance des Véhicules", "CAP"]
+    },
+    "marche": {
+      "salaire_debutant": "1 600 € net/mois",
+      "salaire_experimente": "2 200 € net/mois (chef d'atelier)",
+      "debouches": ["Concession automobile", "Garage indépendant", "Transport"],
+      "tendance": "Pénurie de candidats, transition électrique crée de nouveaux besoins"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/mecanicien-auto"
+  },
+  {
+    "id": "chercheur",
+    "nom": "Chercheur scientifique",
+    "description": "Mène des travaux de recherche fondamentale ou appliquée pour faire avancer les connaissances.",
+    "riasec": ["I", "A", "R"],
+    "etudes": {
+      "diplome": "Doctorat (bac+8)",
+      "duree": "8 ans après le bac (Licence + Master + Thèse)",
+      "acces": "Parcoursup — Licence dans la discipline choisie",
+      "bacs_conseilles": ["Bac général (Maths + SVT ou Physique selon spécialité)"]
+    },
+    "marche": {
+      "salaire_debutant": "2 000 € net/mois (post-doc)",
+      "salaire_experimente": "3 500 € net/mois (directeur de recherche)",
+      "debouches": ["CNRS", "INSERM", "Universités", "Industrie R&D", "Biotech"],
+      "tendance": "Compétitif pour les postes publics, industrie recrute bien"
+    },
+    "lien_onisep": "https://www.onisep.fr/ressources/univers-metier/metiers/chercheur"
+  }
+]

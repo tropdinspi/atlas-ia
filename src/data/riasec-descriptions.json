@@ -1,0 +1,38 @@
+[
+  {
+    "type": "R",
+    "label": "Réaliste",
+    "description": "Tu aimes le travail concret, manuel et technique. Tu préfères agir plutôt que parler.",
+    "mots_cles": ["technique", "manuel", "concret", "terrain", "précis"]
+  },
+  {
+    "type": "I",
+    "label": "Investigateur",
+    "description": "Tu aimes analyser, comprendre et résoudre des problèmes complexes. La curiosité intellectuelle te définit.",
+    "mots_cles": ["analyse", "recherche", "science", "réflexion", "curiosité"]
+  },
+  {
+    "type": "A",
+    "label": "Artistique",
+    "description": "Tu as besoin de créativité et d'expression dans ton travail. Tu aimes l'originalité et l'innovation.",
+    "mots_cles": ["créativité", "expression", "design", "originalité", "liberté"]
+  },
+  {
+    "type": "S",
+    "label": "Social",
+    "description": "Tu t'épanouis en aidant et en travaillant avec les autres. Les relations humaines sont au cœur de ta motivation.",
+    "mots_cles": ["aide", "équipe", "communication", "humain", "soin"]
+  },
+  {
+    "type": "E",
+    "label": "Entrepreneur",
+    "description": "Tu aimes diriger, convaincre et prendre des initiatives. Le leadership et l'ambition te caractérisent.",
+    "mots_cles": ["leadership", "ambition", "vente", "influence", "projet"]
+  },
+  {
+    "type": "C",
+    "label": "Conventionnel",
+    "description": "Tu aimes l'ordre, la précision et le travail bien structuré. La fiabilité et la méthode sont tes forces.",
+    "mots_cles": ["organisation", "précision", "méthode", "données", "structure"]
+  }
+]

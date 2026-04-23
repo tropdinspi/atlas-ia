@@ -4,9 +4,8 @@ import { getContextForQuery } from '@/lib/data-loader'
 import { buildSystemPrompt } from '@/lib/system-prompt'
 import type { Message } from '@/lib/types'
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
-
 export async function POST(req: NextRequest) {
+  const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
   const { messages, dernierMessage } = await req.json() as {
     messages: Message[]
     dernierMessage: string

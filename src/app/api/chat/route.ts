@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import Groq from 'groq-sdk'
 import { getContextForQuery } from '@/lib/data-loader'
 import { buildSystemPrompt } from '@/lib/system-prompt'
+import { logConversation } from '@/lib/logger'
 import type { Message } from '@/lib/types'
 
 export async function POST(req: NextRequest) {
@@ -25,5 +26,9 @@ export async function POST(req: NextRequest) {
   })
 
   const reponse = completion.choices[0].message.content ?? ''
+
+  // Fire-and-forget — le logging ne ralentit pas la réponse
+  logConversation(dernierMessage, reponse)
+
   return NextResponse.json({ reponse })
 }

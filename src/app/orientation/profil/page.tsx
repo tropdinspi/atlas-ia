@@ -20,8 +20,13 @@ export default function ProfilPage() {
       router.push('/orientation/quiz')
       return
     }
-    setResultat(JSON.parse(data))
-  }, [router])
+    try {
+      setResultat(JSON.parse(data))
+    } catch {
+      router.push('/orientation/quiz')
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   if (!resultat) return null
 

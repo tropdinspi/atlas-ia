@@ -24,6 +24,7 @@ export function MetierCard({ metier }: { metier: Metier }) {
           href={metier.lien_onisep}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Fiche ONISEP complète pour ${metier.nom} (ouvre un nouvel onglet)`}
           className="inline-block mt-3 text-xs text-emerald-700 hover:underline"
         >
           Fiche ONISEP complète →

@@ -9,10 +9,10 @@ export default function OrientationPage() {
         Par où commencer ?
       </h1>
       <p className="text-stone-600 text-center mb-12">
-        Deux façons de trouver ta voie avec Atlas-IA.
+        Trois façons de trouver ta voie avec Atlas-IA.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
           <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-2xl">
@@ -26,6 +26,23 @@ export default function OrientationPage() {
             </div>
             <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
               <Link href="/orientation/quiz">Commencer le quiz</Link>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
+          <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-2xl">
+              💡
+            </div>
+            <div>
+              <h2 className="font-serif text-2xl text-stone-900 mb-2">Quiz Valeurs</h2>
+              <p className="text-stone-600 text-sm mb-4">
+                15 questions pour identifier ce qui compte vraiment dans un métier pour toi — liberté, aide, créativité, salaire...
+              </p>
+            </div>
+            <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
+              <Link href="/orientation/valeurs">Découvrir mes valeurs →</Link>
             </Button>
           </CardContent>
         </Card>

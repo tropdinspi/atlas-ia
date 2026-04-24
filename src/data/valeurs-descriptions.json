@@ -1,0 +1,50 @@
+[
+  {
+    "type": "autonomie",
+    "label": "Autonomie",
+    "description": "Tu as besoin de liberté dans ton travail. Tu t'épanouis quand tu peux organiser ton temps et tes méthodes à ta façon, sans te sentir surveillé(e) ou contraint(e) en permanence.",
+    "mots_cles": ["Liberté", "Initiative", "Indépendance", "Flexibilité"]
+  },
+  {
+    "type": "aide",
+    "label": "Aide aux autres",
+    "description": "Ce qui te motive profondément, c'est d'être utile. Que ce soit soigner, enseigner, conseiller ou accompagner, tu trouves du sens dans chaque moment où tu fais la différence pour quelqu'un.",
+    "mots_cles": ["Utilité", "Soin", "Accompagnement", "Empathie"]
+  },
+  {
+    "type": "creativite",
+    "label": "Créativité",
+    "description": "Tu as besoin de créer et d'innover. Un travail répétitif sans espace pour les idées nouvelles t'ennuie rapidement. Tu t'épanouis quand tu peux imaginer, concevoir et exprimer ta vision.",
+    "mots_cles": ["Innovation", "Expression", "Originalité", "Création"]
+  },
+  {
+    "type": "stabilite",
+    "label": "Stabilité",
+    "description": "La sécurité et la prévisibilité sont importantes pour toi. Tu travailles mieux dans un cadre clair, avec des repères fixes et la certitude que ton emploi est solide sur le long terme.",
+    "mots_cles": ["Sécurité", "Prévisibilité", "Pérennité", "Routine"]
+  },
+  {
+    "type": "ambition",
+    "label": "Ambition",
+    "description": "Tu veux progresser, évoluer et être reconnu(e) pour ce que tu accomplis. La montée en responsabilités, le prestige et la visibilité de ton rôle sont des moteurs puissants pour toi.",
+    "mots_cles": ["Progression", "Reconnaissance", "Prestige", "Leadership"]
+  },
+  {
+    "type": "remuneration",
+    "label": "Rémunération",
+    "description": "Bien gagner ta vie est une priorité assumée. Tu n'as pas de complexe à choisir un métier en tenant compte du salaire — c'est une valeur concrète qui conditionne ta qualité de vie.",
+    "mots_cles": ["Salaire", "Revenus", "Niveau de vie", "Récompense"]
+  },
+  {
+    "type": "intellect",
+    "label": "Intellectuel",
+    "description": "Tu aimes comprendre en profondeur, analyser et résoudre des problèmes complexes. Apprendre en permanence et stimuler ton cerveau n'est pas une option pour toi — c'est une nécessité.",
+    "mots_cles": ["Analyse", "Apprentissage", "Réflexion", "Complexité"]
+  },
+  {
+    "type": "collectif",
+    "label": "Collectif",
+    "description": "Tu t'épanouis dans les dynamiques de groupe. La collaboration, le sentiment d'appartenir à une équipe et partager des réussites ensemble sont au cœur de ce que tu attends d'un travail.",
+    "mots_cles": ["Équipe", "Collaboration", "Lien", "Partage"]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  { "id": 1,  "texte": "J'aime pouvoir organiser mon travail comme je le veux, sans trop de contraintes.", "type": "autonomie" },
+  { "id": 2,  "texte": "Avoir des horaires flexibles et gérer mon emploi du temps librement est très important pour moi.", "type": "autonomie" },
+  { "id": 3,  "texte": "Savoir que je suis utile aux autres dans mon quotidien professionnel me tient vraiment à cœur.", "type": "aide" },
+  { "id": 4,  "texte": "J'aimerais un métier où j'aide, j'accompagne ou je soigne des personnes.", "type": "aide" },
+  { "id": 5,  "texte": "Pouvoir créer, inventer ou imaginer de nouvelles choses au travail est essentiel pour moi.", "type": "creativite" },
+  { "id": 6,  "texte": "J'ai besoin d'exprimer mes idées et mon originalité dans ce que je fais professionnellement.", "type": "creativite" },
+  { "id": 7,  "texte": "La sécurité de l'emploi et la stabilité du contrat sont des critères prioritaires pour moi.", "type": "stabilite" },
+  { "id": 8,  "texte": "Je préfère un travail prévisible avec des habitudes bien établies plutôt qu'un quotidien incertain.", "type": "stabilite" },
+  { "id": 9,  "texte": "Progresser dans ma carrière et être reconnu(e) pour mes compétences me motive beaucoup.", "type": "ambition" },
+  { "id": 10, "texte": "Avoir du prestige ou un titre valorisant dans mon métier compte pour moi.", "type": "ambition" },
+  { "id": 11, "texte": "Être bien payé(e) est l'une de mes priorités dans le choix d'un métier.", "type": "remuneration" },
+  { "id": 12, "texte": "Je veux un travail qui me permette d'avoir un bon niveau de vie à long terme.", "type": "remuneration" },
+  { "id": 13, "texte": "J'aime analyser des problèmes complexes et trouver des solutions par moi-même.", "type": "intellect" },
+  { "id": 14, "texte": "Apprendre en permanence et continuer à développer mes connaissances au travail est indispensable.", "type": "intellect" },
+  { "id": 15, "texte": "Travailler en équipe et créer des liens avec mes collègues est une source de motivation pour moi.", "type": "collectif" }
+]

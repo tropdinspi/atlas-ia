@@ -1,6 +1,10 @@
-export function buildSystemPrompt(context: string): string {
+export function buildSystemPrompt(context: string, profilUtilisateur?: string): string {
   const contextSection = context
     ? `\nContexte disponible sur les métiers :\n${context}\n`
+    : ''
+
+  const profilSection = profilUtilisateur
+    ? `\nProfil de l'utilisateur (résultats de ses tests d'orientation) :\n${profilUtilisateur}\nTiens compte de ce profil pour personnaliser tes réponses, suggérer des métiers adaptés et utiliser un angle correspondant à ses intérêts.\n`
     : ''
 
   return `Tu es Atlas-IA, un conseiller d'orientation professionnelle bienveillant et expert du système éducatif français. Tu aides principalement les lycéens (15-18 ans) à découvrir leur voie professionnelle.
@@ -13,5 +17,5 @@ Tes règles absolues :
 - Si tu n'as pas l'information, dis-le clairement plutôt qu'inventer
 - Limite tes réponses à 250 mots maximum pour rester lisible sur mobile
 - Utilise le contexte fourni en priorité pour tes réponses
-${contextSection}`
+${profilSection}${contextSection}`
 }

@@ -7,13 +7,14 @@ import type { Message } from '@/lib/types'
 
 export async function POST(req: NextRequest) {
   const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
-  const { messages, dernierMessage } = await req.json() as {
+  const { messages, dernierMessage, profilUtilisateur } = await req.json() as {
     messages: Message[]
     dernierMessage: string
+    profilUtilisateur?: string
   }
 
   const context = getContextForQuery(dernierMessage)
-  const systemPrompt = buildSystemPrompt(context)
+  const systemPrompt = buildSystemPrompt(context, profilUtilisateur)
 
   const completion = await groq.chat.completions.create({
     model: 'llama-3.1-8b-instant',

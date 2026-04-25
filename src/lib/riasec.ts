@@ -1,4 +1,4 @@
-import type { RiasecScores, RiasecType, QuizResult, Metier } from './types'
+import type { RiasecScores, RiasecType, ValeurType, QuizResult, Metier } from './types'
 import questionsData from '../data/quiz-questions.json'
 import metiersData from '../data/metiers.json'
 
@@ -55,4 +55,27 @@ export function traiterQuiz(reponses: Record<number, number>): QuizResult {
   const scores = calculerScores(reponses)
   const profil = determinerProfil(scores)
   return { scores, profil, metiers: suggererMetiers(profil) }
+}
+
+/**
+ * Suggère jusqu'à 10 métiers en combinant profil RIASEC et valeurs professionnelles.
+ * Score = (types RIASEC en commun × 2) + (valeurs en commun × 1)
+ * Filtre d'abord sur au moins un type RIASEC en commun.
+ */
+export function suggererMetiersCombines(
+  profilRiasec: RiasecType[],
+  profilValeurs: ValeurType[]
+): Metier[] {
+  const [type1, type2] = profilRiasec
+  return metiers
+    .filter(m => m.riasec.includes(type1) || m.riasec.includes(type2))
+    .map(m => ({
+      metier: m,
+      score:
+        m.riasec.filter(t => profilRiasec.includes(t)).length * 2 +
+        m.valeurs.filter(v => profilValeurs.includes(v)).length,
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 10)
+    .map(({ metier }) => metier)
 }

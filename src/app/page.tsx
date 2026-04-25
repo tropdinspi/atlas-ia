@@ -13,12 +13,12 @@ export default function HomePage() {
           Trouve ta voie<br />avec l&apos;intelligence artificielle
         </h1>
         <p className="text-lg text-stone-600 max-w-xl mx-auto mb-8">
-          Atlas-IA t&apos;aide à découvrir les métiers qui correspondent vraiment à ta personnalité.
-          Quiz RIASEC et chat personnalisé — entièrement gratuit.
+          Atlas-IA t&apos;aide à découvrir les métiers qui correspondent vraiment à ta personnalité —
+          que tu sois lycéen, étudiant en questionnement ou en reconversion professionnelle.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Button size="lg" className="bg-stone-900 hover:bg-stone-700 text-white" asChild>
-            <Link href="/orientation/quiz">Faire le quiz RIASEC</Link>
+            <Link href="/orientation">Commencer mon orientation</Link>
           </Button>
           <Button size="lg" variant="outline" className="border-stone-300" asChild>
             <Link href="/orientation/chat">Poser une question</Link>

@@ -92,85 +92,82 @@ export default function OrientationPage() {
           Par où commencer
         </h2>
 
-        {/* Profil lycéen — 3 cartes comme avant */}
-        {profilActif === 'lyceen' && (
-          <div className="grid md:grid-cols-3 gap-6">
+        {/* Carte chat — mise en avant pour étudiant/reconversion, standard pour lycéen */}
+        <div className={`grid gap-6 ${profilActif === 'lyceen' ? 'md:grid-cols-3' : 'md:grid-cols-1 max-w-md mx-auto'}`}>
+
+          {/* Chat — toujours visible, description adaptée au profil */}
+          <Card className={`bg-white hover:border-emerald-300 transition-colors ${profilActif !== 'lyceen' ? 'border-emerald-200 md:col-span-1' : 'border-stone-200'}`}>
+            <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-2xl">
+                💬
+              </div>
+              <div>
+                <h3 className="font-serif text-2xl text-stone-900 mb-2">
+                  {profilActif === 'lyceen' ? 'Chat libre' : 'Parler à Atlas-IA'}
+                </h3>
+                <p className="text-stone-600 text-sm mb-4">
+                  {profilActif === 'etudiant'
+                    ? "L'IA t'aide à comprendre ce qui ne va pas dans tes études et à explorer des pistes de réorientation."
+                    : profilActif === 'reconversion'
+                    ? "L'IA analyse ta situation professionnelle et te propose des voies de reconversion réalistes (CPF, VAE, bilan de compétences)."
+                    : 'Pose tes questions · Réponses instantanées · Sources officielles'}
+                </p>
+              </div>
+              <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
+                <Link href="/orientation/chat">
+                  {profilActif === 'lyceen' ? 'Ouvrir le chat' : 'Commencer la conversation →'}
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Outils complémentaires — Quiz RIASEC et Valeurs pour tous les profils */}
+        <div className="mt-8">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4 text-center">
+            Tests de personnalité
+          </h2>
+          <p className="text-stone-500 text-sm text-center mb-6">
+            {profilActif === 'lyceen'
+              ? 'Fais les quiz pour que le chat connaisse ton profil et te suggère des métiers adaptés.'
+              : 'Complète ces tests pour affiner tes résultats — le chat utilisera ton profil pour mieux te conseiller.'}
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
             <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
-              <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-2xl">
+              <CardContent className="pt-6 pb-5 flex flex-col items-center text-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center text-xl">
                   🎯
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-stone-900 mb-2">Quiz RIASEC</h3>
-                  <p className="text-stone-600 text-sm mb-4">
-                    30 questions · 8 min · Profil complet avec métiers adaptés
-                  </p>
-                </div>
-                <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
-                  <Link href="/orientation/quiz">Commencer le quiz</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
-              <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-2xl">
-                  💡
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-stone-900 mb-2">Quiz Valeurs</h3>
-                  <p className="text-stone-600 text-sm mb-4">
-                    15 questions pour identifier ce qui compte vraiment dans un métier pour toi — liberté, aide, créativité, salaire...
-                  </p>
-                </div>
-                <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
-                  <Link href="/orientation/valeurs">Découvrir mes valeurs →</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
-              <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-2xl">
-                  💬
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-stone-900 mb-2">Chat libre</h3>
-                  <p className="text-stone-600 text-sm mb-4">
-                    Pose tes questions · Réponses instantanées · Sources officielles
+                  <h3 className="font-serif text-xl text-stone-900 mb-1">Quiz RIASEC</h3>
+                  <p className="text-stone-500 text-sm mb-3">
+                    30 questions · 8 min · Identifie le type d&apos;activités qui te correspondent
                   </p>
                 </div>
                 <Button variant="outline" className="border-stone-300 w-full" asChild>
-                  <Link href="/orientation/chat">Ouvrir le chat</Link>
+                  <Link href="/orientation/quiz">Faire le quiz RIASEC</Link>
                 </Button>
               </CardContent>
             </Card>
-          </div>
-        )}
 
-        {/* Profil étudiant ou reconversion — une seule carte vers le chat */}
-        {(profilActif === 'etudiant' || profilActif === 'reconversion') && (
-          <div className="flex justify-center">
-            <Card className="border-emerald-200 bg-white hover:border-emerald-400 transition-colors max-w-md w-full">
-              <CardContent className="pt-8 pb-6 flex flex-col items-center text-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-2xl">
-                  💬
+            <Card className="border-stone-200 bg-white hover:border-emerald-300 transition-colors">
+              <CardContent className="pt-6 pb-5 flex flex-col items-center text-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-xl">
+                  💡
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-stone-900 mb-2">Parler à Atlas-IA</h3>
-                  <p className="text-stone-600 text-sm mb-4">
-                    {profilActif === 'etudiant'
-                      ? "L'IA va t'aider à comprendre ce qui ne va pas dans tes études et explorer des pistes de réorientation."
-                      : "L'IA va analyser ta situation professionnelle et te proposer des voies de reconversion réalistes."}
+                  <h3 className="font-serif text-xl text-stone-900 mb-1">Quiz Valeurs</h3>
+                  <p className="text-stone-500 text-sm mb-3">
+                    15 questions · 4 min · Ce qui compte vraiment pour toi dans un métier
                   </p>
                 </div>
-                <Button className="bg-stone-900 hover:bg-stone-700 text-white w-full" asChild>
-                  <Link href="/orientation/chat">Commencer la conversation →</Link>
+                <Button variant="outline" className="border-stone-300 w-full" asChild>
+                  <Link href="/orientation/valeurs">Découvrir mes valeurs</Link>
                 </Button>
               </CardContent>
             </Card>
           </div>
-        )}
+        </div>
       </div>
     </div>
   )

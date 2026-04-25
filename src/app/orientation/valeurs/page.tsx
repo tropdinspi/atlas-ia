@@ -9,7 +9,7 @@ export default function ValeursPage() {
   if (chargement) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-24 text-center">
-        <p className="font-serif text-2xl text-stone-700">Atlas-IA analyse tes valeurs...</p>
+        <p className="font-serif text-2xl text-stone-700">Cursus analyse tes valeurs...</p>
         <p className="text-stone-500 mt-2">Quelques secondes</p>
       </div>
     )

@@ -33,14 +33,14 @@ export default function OrientationPage() {
   const choisirProfil = (id: ProfilId) => {
     setProfilActif(id)
     try {
-      sessionStorage.setItem('atlas-profil', id)
+      sessionStorage.setItem('cursus-profil', id)
     } catch { /* ignore si sessionStorage indisponible */ }
   }
 
   // Lire le profil sauvegardé au montage (si l'utilisateur revient)
   useEffect(() => {
     try {
-      const sauvegarde = sessionStorage.getItem('atlas-profil') as ProfilId | null
+      const sauvegarde = sessionStorage.getItem('cursus-profil') as ProfilId | null
       if (sauvegarde && PROFILS.some(p => p.id === sauvegarde)) {
         setProfilActif(sauvegarde)
       }
@@ -53,7 +53,7 @@ export default function OrientationPage() {
         Par où commencer ?
       </h1>
       <p className="text-stone-600 text-center mb-12">
-        Dis-nous d&apos;abord qui tu es — Atlas-IA s&apos;adapte à ta situation.
+        Dis-nous d&apos;abord qui tu es — Cursus s&apos;adapte à ta situation.
       </p>
 
       {/* Section A — Sélecteur de profil */}
@@ -103,7 +103,7 @@ export default function OrientationPage() {
               </div>
               <div>
                 <h3 className="font-serif text-2xl text-stone-900 mb-2">
-                  {profilActif === 'lyceen' ? 'Chat libre' : 'Parler à Atlas-IA'}
+                  {profilActif === 'lyceen' ? 'Chat libre' : 'Parler à Cursus'}
                 </h3>
                 <p className="text-stone-600 text-sm mb-4">
                   {profilActif === 'etudiant'

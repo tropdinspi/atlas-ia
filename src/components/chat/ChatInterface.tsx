@@ -57,15 +57,15 @@ function construireBienvenue(riasec: QuizResult | null, valeurs: ValeursResult |
 
   // Pas de quiz — message adapté au type d'utilisateur
   if (profilType === 'etudiant') {
-    return "Bonjour ! Je suis Atlas-IA. Je vais t'aider à y voir plus clair sur ton orientation. Pour commencer — dans quoi tu études en ce moment ?"
+    return "Bonjour ! Je suis Cursus. Je vais t'aider à y voir plus clair sur ton orientation. Pour commencer — dans quoi tu études en ce moment ?"
   }
 
   if (profilType === 'reconversion') {
-    return "Bonjour ! Je suis Atlas-IA. Je vais t'aider à explorer ta reconversion. Pour mieux te conseiller — quel est ton métier actuel ?"
+    return "Bonjour ! Je suis Cursus. Je vais t'aider à explorer ta reconversion. Pour mieux te conseiller — quel est ton métier actuel ?"
   }
 
   // lyceen par défaut
-  return "Bonjour ! Je suis Atlas-IA, ton conseiller d'orientation. Pose-moi toutes tes questions sur les métiers, les études ou l'orientation professionnelle. Je suis là pour t'aider !"
+  return "Bonjour ! Je suis Cursus, ton conseiller d'orientation. Pose-moi toutes tes questions sur les métiers, les études ou l'orientation professionnelle. Je suis là pour t'aider !"
 }
 
 // Libellé du type de profil affiché dans le bandeau
@@ -90,17 +90,17 @@ export function ChatInterface() {
     let profil: ProfilType = 'lyceen'
 
     try {
-      const d = sessionStorage.getItem('atlas-quiz-resultat')
+      const d = sessionStorage.getItem('cursus-quiz-resultat')
       if (d) riasec = JSON.parse(d)
     } catch { /* ignore */ }
 
     try {
-      const d = sessionStorage.getItem('atlas-valeurs-resultat')
+      const d = sessionStorage.getItem('cursus-valeurs-resultat')
       if (d) valeurs = JSON.parse(d)
     } catch { /* ignore */ }
 
     try {
-      const d = sessionStorage.getItem('atlas-profil') as ProfilType | null
+      const d = sessionStorage.getItem('cursus-profil') as ProfilType | null
       if (d && ['lyceen', 'etudiant', 'reconversion'].includes(d)) profil = d
     } catch { /* ignore */ }
 
@@ -187,7 +187,7 @@ export function ChatInterface() {
         {chargement && (
           <div className="flex justify-start">
             <div className="bg-white border border-stone-200 rounded-2xl rounded-bl-sm px-4 py-3">
-              <span className="text-stone-400 text-sm">Atlas-IA réfléchit...</span>
+              <span className="text-stone-400 text-sm">Cursus réfléchit...</span>
             </div>
           </div>
         )}
@@ -195,7 +195,7 @@ export function ChatInterface() {
       </div>
       {/* Notice collecte de données — phase 1 */}
       <p className="text-center text-xs text-stone-400 px-4 pb-1">
-        Conversations anonymisées pour entraîner Atlas-IA ·{' '}
+        Conversations anonymisées pour entraîner Cursus ·{' '}
         <a href="/a-propos" className="underline underline-offset-2 hover:text-stone-500">En savoir plus</a>
       </p>
       <ChatInput onEnvoi={envoyerMessage} disabled={chargement} />

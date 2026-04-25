@@ -1,11 +1,11 @@
 export default function AProposPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-16">
-      <h1 className="font-serif text-4xl text-stone-900 mb-8">À propos d&apos;Atlas-IA</h1>
+      <h1 className="font-serif text-4xl text-stone-900 mb-8">À propos d&apos;Cursus</h1>
 
       <div className="space-y-6 text-stone-700">
         <p>
-          Atlas-IA est un conseiller d&apos;orientation gratuit, construit pour aider les lycéens
+          Cursus est un conseiller d&apos;orientation gratuit, construit pour aider les lycéens
           et les adultes en reconversion à trouver leur voie professionnelle.
         </p>
 
@@ -20,8 +20,8 @@ export default function AProposPage() {
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-amber-900">
           <p className="font-medium mb-1">⚠️ Phase de développement — collecte de données active</p>
           <p>
-            Les conversations avec Atlas-IA sont actuellement enregistrées de façon anonyme.
-            Ces données servent uniquement à entraîner la future version du modèle Atlas-IA,
+            Les conversations avec Cursus sont actuellement enregistrées de façon anonyme.
+            Ces données servent uniquement à entraîner la future version du modèle Cursus,
             qui tournera entièrement sur ton appareil (sans serveur, sans connexion).
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function AProposPage() {
           Tes messages transitent par leurs serveurs le temps de générer une réponse.
         </p>
         <p className="mt-2">
-          <strong>Phase 2 (en développement) :</strong> Atlas-IA sera entraîné sur les conversations
+          <strong>Phase 2 (en développement) :</strong> Cursus sera entraîné sur les conversations
           collectées ici, puis le modèle final tournera directement dans ton navigateur —
           aucune donnée ne quittera ton appareil.
         </p>

@@ -1,7 +1,7 @@
 import { ChatInterface } from '@/components/chat/ChatInterface'
 
 export const metadata = {
-  title: 'Chat orientation — Atlas-IA',
+  title: 'Chat orientation — Cursus',
 }
 
 export default function ChatPage() {

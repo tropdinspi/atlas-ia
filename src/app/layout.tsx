@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Atlas-IA — Trouve ta voie',
+  title: 'Cursus — Trouve ta voie',
   description: "Conseiller d'orientation IA gratuit pour lycéens et adultes en reconversion. Quiz RIASEC et chat personnalisé.",
 }
 

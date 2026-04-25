@@ -13,7 +13,7 @@ export default function HomePage() {
           Trouve ta voie<br />avec l&apos;intelligence artificielle
         </h1>
         <p className="text-lg text-stone-600 max-w-xl mx-auto mb-8">
-          Atlas-IA t&apos;aide à découvrir les métiers qui correspondent vraiment à ta personnalité —
+          Cursus t&apos;aide à découvrir les métiers qui correspondent vraiment à ta personnalité —
           que tu sois lycéen, étudiant en questionnement ou en reconversion professionnelle.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">

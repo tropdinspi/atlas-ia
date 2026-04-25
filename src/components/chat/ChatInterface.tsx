@@ -193,6 +193,11 @@ export function ChatInterface() {
         )}
         <div ref={basRef} />
       </div>
+      {/* Notice collecte de données — phase 1 */}
+      <p className="text-center text-xs text-stone-400 px-4 pb-1">
+        Conversations anonymisées pour entraîner Atlas-IA ·{' '}
+        <a href="/a-propos" className="underline underline-offset-2 hover:text-stone-500">En savoir plus</a>
+      </p>
       <ChatInput onEnvoi={envoyerMessage} disabled={chargement} />
     </div>
   )
